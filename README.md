@@ -4,7 +4,7 @@ https://github.com/heitor2002/csgoexplained/blob/main/LICENSE
 
 ## Sobre o projeto
 
-CS:GO Explained foi é uma aplicação front-end responsiva, sendo meu primeiro projeto, feito icinialmente para estudo tanto de novas tecnologias quanto do funcionamento de hospedagens de sites.
+CS:GO Explained foi é uma aplicação front-end responsiva, sendo meu primeiro projeto, feito inicialmente para estudo tanto de novas tecnologias quanto do funcionamento de hospedagens de sites.
 
 O projeto utiliza de referência o jogo Counter-Strike: Global Offensive, e explora diversas funcionalidades do jogo, ensinando posições de cada mapa, utilitários, configurações, etc.
 
