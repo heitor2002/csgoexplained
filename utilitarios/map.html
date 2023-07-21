@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Smokes</title>
+  </head>
+  <body>
+    <header>
+      <img src="../media/logo.png" alt="" />
+      <nav>
+        <div class="container">
+          <ul class="menu-desktop">
+            <li><a href="/">Página Inicial</a></li>
+            <li><a href="/#player-functions">Funções</a></li>
+            <li><a href="/#utilities">Utilitários</a></li>
+            <li><a href="/#maps">Mapas</a></li>
+            <li><a href="/comandos/binds.html">Comandos</a></li>
+          </ul>
+          <div class="menu-mobile">
+            <img src="../media/menu-mobile.png" alt="" id="menu-button" />
+            <ul>
+              <div class="close-button">X</div>
+              <li><a href="/">Página Inicial</a></li>
+              <li><a href="/#player-functions">Funções</a></li>
+              <li><a href="/#utilities">Utilitários</a></li>
+              <li><a href="/#maps">Mapas</a></li>
+              <li><a href="/comandos/binds.html">Comandos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="utilities-details map-detail">
+      <div class="container">
+        <main class="map-utilities-information">
+          <h2 id="utilities-map-name" ></h2>
+          <img id="utilities-map-img" usemap="#imagemap" >
+          <map name="imagemap" id="map-coords">
+            <area shape="circle" coords="237,380,30" href="" alt="" >
+          </map>
+          <div class="youtube-video" id="youtube-video-div">
+
+            <!-- <iframe src="" id="iframe-youtube"></iframe> -->
+          </div>
+        </main>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/map-utilities.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

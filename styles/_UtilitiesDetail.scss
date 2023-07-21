@@ -1,0 +1,14 @@
+section.utilities-details{
+    padding: 50px 0;
+    area{
+        cursor: pointer;
+        
+    }
+    iframe{
+        width: 100%;
+        max-width: 800px;
+        height: 500px;
+        border: 1px solid $main-color;
+        margin: 30px auto;
+    }
+}

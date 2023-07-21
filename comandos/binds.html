@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Comandos e binds</title>
+  </head>
+  <body>
+    <header>
+      <img src="../media/logo.png" alt="" />
+      <nav>
+        <div class="container">
+          <ul class="menu-desktop">
+            <li><a href="/">Página Inicial</a></li>
+            <li><a href="/#player-functions">Funções</a></li>
+            <li><a href="/#utilities">Utilitários</a></li>
+            <li><a href="/#maps">Mapas</a></li>
+            <li><a href="/comandos/binds.html">Comandos</a></li>
+          </ul>
+          <div class="menu-mobile">
+            <img src="../media/menu-mobile.png" alt="" id="menu-button" />
+            <ul>
+              <div class="close-button">X</div>
+              <li><a href="/">Página Inicial</a></li>
+              <li><a href="/#player-functions">Funções</a></li>
+              <li><a href="/#utilities">Utilitários</a></li>
+              <li><a href="/#maps">Mapas</a></li>
+              <li><a href="/comandos/binds.html">Comandos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="binds">
+      <div class="container">
+        <h2>Binds e comandos</h2>
+        <table>
+          <tr>
+            <th>Nome:</th>
+            <th>Comando:</th>
+          </tr>
+          <tr>
+            <td>Jumpthrow</td>
+            <td>bind TECLA "+jump;-attack;-jump";</td>
+          </tr>
+          <tr>
+            <td>Alinhamento de utilitários</td>
+            <td>bind TECLA "incrementvar cl_crosshairsize (tamanho da sua mira) 4000 (4000- o tamanho da sua mira)"</td>
+          </tr>
+          <tr>
+            <td>Pular com scroll</td>
+            <td>bind "mwheeldown" "+jump" ou bind "mwheelup" "+jump"</td>
+          </tr>
+          <tr>
+            <td>Limpar superfícies</td>
+            <td>bind TECLA "+use; r_cleardecals"</td>
+          </tr>
+          <tr>
+            <td>Alterar espessura do scope</td>
+            <td>cl_crosshair_sniper_width (NÚMERO DE 0 ATÉ 999)</td>
+          </tr>
+          <tr>
+            <td>Alterar espessura do scope</td>
+            <td>cl_crosshair_sniper_width (NÚMERO DE 0 ATÉ 999)</td>
+          </tr>
+          <tr>
+            <td>Visualizar equipamentos de aliados através de superfícies</td>
+            <td>+cl_show_team_equipment 1</td>
+          </tr>
+          <tr>
+            <td>Troca de mãos</td>
+            <td>cl_righthand 0/1</td>
+          </tr>
+          <tr>
+            <td>Movimento da arma ao andar</td>
+            <td>cl_bob_lower_amt 5  |Valor entre 0 e 21</td>
+          </tr>
+          <tr>
+            <td>Movimento da arma ao atirar</td>
+            <td>viewmodel_recoil 0/1</td>
+          </tr>
+          <tr>
+            <td>Mostrar projéteis</td>
+            <td>r_drawtracers_firstperson 1/0</td>
+          </tr>
+          <tr>
+            <td>Raio-x para asssitir jogos</td>
+            <td>spec_show_xray 1</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

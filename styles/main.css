@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap");
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+header {
+  background-color: rgb(24, 23, 23);
+  text-align: center;
+}
+header img {
+  width: 80px;
+  padding: 5px;
+}
+header nav {
+  background-color: rgb(39, 39, 39);
+  padding: 5px;
+}
+header nav ul.menu-desktop {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  gap: 10px;
+}
+@media screen and (max-width: 570px) {
+  header nav ul.menu-desktop {
+    display: none;
+  }
+}
+header nav ul.menu-desktop li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+header nav ul.menu-desktop li a:hover {
+  text-decoration: underline;
+  color: rgb(241, 169, 35);
+}
+header .menu-mobile {
+  display: none;
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 570px) {
+  header .menu-mobile {
+    display: block;
+  }
+}
+header .menu-mobile img {
+  width: 100%;
+  max-width: 50px;
+  cursor: pointer;
+}
+header .menu-mobile ul {
+  width: 50vw;
+  max-width: 250px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: rgb(39, 39, 39);
+  list-style: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition: 0.3s;
+  transform: translateX(100%);
+}
+header .menu-mobile ul .close-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+header .menu-mobile ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section.main-banner {
+  text-align: center;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.main-banner h2 {
+  font-size: 3rem;
+  color: rgb(241, 169, 35);
+}
+section.main-banner h4 {
+  margin-top: 30px;
+  font-size: 3rem;
+  color: rgb(39, 39, 39);
+}
+section.main-banner h5 {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+section.main-banner h5 a {
+  color: rgb(241, 169, 35);
+}
+
+section.player-functions {
+  padding: 30px 0;
+}
+section.player-functions .container nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+section.player-functions .container nav button {
+  min-width: 230px;
+  padding: 10px 5px;
+  border: 0.1rem solid rgb(241, 169, 35);
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+section.player-functions .container nav button:hover {
+  color: rgb(39, 39, 39);
+  background-color: rgb(241, 169, 35);
+  transform: scale(1.05);
+}
+section.player-functions .container .flex-functions {
+  display: flex;
+  margin-top: 30px;
+}
+@media screen and (max-width: 700px) {
+  section.player-functions .container .flex-functions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+section.player-functions .container .flex-functions .functions-descriptions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.player-functions .container .flex-functions .functions-descriptions .container {
+  max-width: 500px;
+}
+section.player-functions .container .flex-functions .functions-descriptions .container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+section.player-functions .container .flex-functions .functions-descriptions .container p {
+  color: rgb(39, 39, 39);
+}
+section.player-functions .container .flex-functions img {
+  width: 100%;
+  max-width: 350px;
+  max-height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 700px) {
+  section.player-functions .container .flex-functions img {
+    max-width: 300px;
+  }
+}
+
+section.utilities {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(39, 39, 39);
+}
+section.utilities center h2 {
+  color: white;
+  font-size: 2rem;
+}
+section.utilities .container nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+section.utilities .container nav button {
+  min-width: 200px;
+  padding: 15px 0;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 0.1rem solid rgb(241, 169, 35);
+  color: rgb(241, 169, 35);
+  font-weight: 300;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section.utilities .container nav button:hover {
+  background-color: rgb(241, 169, 35);
+  color: white;
+  font-weight: bold;
+}
+section.utilities .container ul.maps-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin-top: 30px;
+}
+section.utilities .container ul.maps-list li {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(39, 39, 39);
+  position: relative;
+}
+section.utilities .container ul.maps-list li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+section.utilities .container ul.maps-list li .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+section.utilities .container ul.maps-list li .overlay h2 {
+  opacity: 0;
+  color: white;
+}
+section.utilities .container ul.maps-list li .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+section.utilities .container ul.maps-list li .overlay:hover h2 {
+  opacity: 1;
+}
+
+section.maps {
+  padding: 30px 0;
+}
+section.maps .container {
+  max-width: 1200px;
+}
+section.maps .container .flex-map-section {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 770px) {
+  section.maps .container .flex-map-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+section.maps .container .flex-map-section .details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+  section.maps .container .flex-map-section .details {
+    width: 90%;
+  }
+}
+section.maps .container .flex-map-section .details h2 {
+  font-size: 2rem;
+  color: rgb(24, 23, 23);
+  max-width: 600px;
+}
+section.maps .container .flex-map-section .details h2 span {
+  color: rgb(241, 169, 35);
+}
+section.maps .container .flex-map-section .details p {
+  color: rgb(39, 39, 39);
+}
+section.maps .container .flex-map-section aside.map-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 770px) {
+  section.maps .container .flex-map-section aside.map-list ul {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+section.maps .container .flex-map-section aside.map-list ul a {
+  text-decoration: none;
+  color: rgb(24, 23, 23);
+}
+section.maps .container .flex-map-section aside.map-list ul a li {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(241, 169, 35);
+  min-width: 200px;
+  transition: 0.2s;
+}
+section.maps .container .flex-map-section aside.map-list ul a li:hover {
+  background-color: rgb(241, 169, 35);
+  transform: scale(1.1);
+}
+
+section.map-detail {
+  padding: 50px 0;
+  display: flex;
+  text-align: center;
+}
+section.map-detail h2 {
+  padding: 50px 0;
+  font-size: 2rem;
+  color: rgb(24, 23, 23);
+}
+section.map-detail img {
+  width: 100%;
+  max-width: 500px;
+}
+
+section.utilities-details {
+  padding: 50px 0;
+}
+section.utilities-details area {
+  cursor: pointer;
+}
+section.utilities-details iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  border: 1px solid rgb(241, 169, 35);
+  margin: 30px auto;
+}
+
+section.binds {
+  margin: 30px 0;
+  text-align: center;
+}
+section.binds table {
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 150px;
+  overflow: auto;
+}
+section.binds table tr:nth-child(2n) {
+  background-color: #ccc;
+}
+section.binds table tr td {
+  padding: 10px 2%;
+}/*# sourceMappingURL=main.css.map */

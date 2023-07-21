@@ -1,0 +1,14 @@
+section.map-detail{
+    padding: 50px 0;
+    display: flex;
+    text-align: center;
+    h2{
+        padding: 50px 0;
+        font-size: 2rem;
+        color: $black;
+    }
+    img{
+        width: 100%;
+        max-width: 500px;
+    }
+}

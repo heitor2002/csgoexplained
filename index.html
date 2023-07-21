@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./media/logo.png" alt="" />
+      <nav>
+        <div class="container">
+          <ul class="menu-desktop">
+            <li><a href="/">Página Inicial</a></li>
+            <li><a href="#player-functions">Funções</a></li>
+            <li><a href="#utilities">Utilitários</a></li>
+            <li><a href="#maps">Mapas</a></li>
+            <li><a href="/comandos/binds.html">Comandos</a></li>
+          </ul>
+          <div class="menu-mobile">
+            <img src="./media/menu-mobile.png" alt="" id="menu-button" />
+            <ul>
+              <div class="close-button">X</div>
+              <li><a href="/">Página Inicial</a></li>
+              <li><a href="#player-functions">Funções</a></li>
+              <li><a href="#utilities">Utilitários</a></li>
+              <li><a href="#maps">Mapas</a></li>
+              <li><a href="/comandos/binds.html">Comandos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="main-banner">
+      <div class="container">
+        <h2>CS:GO Explained</h2>
+        <h4>
+          Um projeto feito para aqueles que amam o FPS mais querido do mundo!
+        </h4>
+        <h5>
+          Por
+          <a href="https://heitor2002.github.io/portfolio/"
+            >Heitor Montagnini</a
+          >
+        </h5>
+      </div>
+    </section>
+    <section class="player-functions" id="player-functions">
+      <div class="container">
+        <nav id="nav-flex-functions"></nav>
+        <div class="flex-functions">
+          <div class="functions-descriptions">
+            <div class="container" id="functions-descriptions">
+              <h2 id="player-title">In-game Leader</h2>
+              <p id="player-descriptions">
+                IGL ou in-game leader é o player responsável por organizar
+                táticas, coordenar o time e fazer a análise completa não só do
+                jogo, mas também dos jogadores, elencando suas qualidades e
+                fraquezas. <br /><br />
+                Reconhecer que está lidando com pessoas pode ser algo muito
+                óbvio para alguns, entretanto, não são todas as pessoas que
+                possuem esta qualidade que é uma característica essencial para o
+                IGL, pois ele está responsável por analisar cada player do time
+                e fazer as alterações necessárias ao decorrer do jogo.
+              </p>
+            </div>
+          </div>
+          <img
+            src="https://img-cdn.hltv.org/playerbodyshot/HBq_UoWU_p_yC7jkxXD3Lp.png?ixlib=java-2.1.0&w=400&s=68522238b911e44997cad4e63d67398e"
+            alt=""
+            id="image-player"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="utilities" id="utilities">
+      <center><h2>Utilitários</h2></center>
+      <div class="container">
+        <nav>
+          <button
+            id="smoke-button"
+            class="utilities-buttons"
+            style="background-color: rgb(241, 169, 35); color: white"
+          >
+            Granada de fumaça
+          </button>
+          <button id="flash-button" class="utilities-buttons">
+            Granada de luz
+          </button>
+          <button id="molotov-button" class="utilities-buttons">Molotov</button>
+        </nav>
+        <ul class="maps-list" id="map-list-utilities"></ul>
+      </div>
+    </section>
+    <section class="maps" id="maps">
+      <div class="container">
+        <div class="flex-map-section">
+          <main class="details">
+            <h2>
+              Ainda <span>não conhece</span> o nome dos <span>lugares</span> do
+              mapa?
+            </h2>
+            <p>
+              Sem dúvida uma das coisas mais importantes durante uma partida de
+              Counter-Strike é a informação, saber o posicionamento do
+              adversário é fundamental para que você e seu time possam bolar uma
+              boa estratégia e tomar as melhores decisões, tanto para escolher o
+              bomb mais enfraquecido quando jogando do lado TR, quanto para
+              fortalecer seu bomb quando jogando do lado CT. Conheça o nome de
+              cada posição e melhore em 200% sua comunicação com o time.
+            </p>
+          </main>
+          <aside class="map-list">
+            <ul id="map-list">
+              <!--LISTA DE MAPAS-->
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

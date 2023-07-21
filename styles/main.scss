@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+
+$main-color: rgb(241, 169, 35);
+$black: rgb(24, 23, 23);
+$grey: rgb(39, 39, 39);
+
+html,
+body{
+    // height: 100%;
+    scroll-behavior: smooth !important;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    background-color: $black;
+    text-align: center;
+    img{
+        width: 80px;
+        padding: 5px;
+    }
+    nav{
+        background-color: $grey;
+        padding: 5px;
+        ul.menu-desktop{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            gap: 10px;
+            @media screen and (max-width: 570px){
+                display: none;
+            }
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 300;
+                    &:hover{
+                        text-decoration: underline;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    .menu-mobile{
+        display: none;
+        text-align: right;
+        position: relative;
+        z-index: 2;
+        @media screen and (max-width: 570px){
+            display: block;
+        }
+        img{
+            width: 100%;
+            max-width: 50px;
+            cursor: pointer;
+        }
+        ul{
+            width: 50vw;
+            max-width: 250px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            background-color: $grey;
+            list-style: none;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            transition: .3s;
+            transform: translateX(100%);
+            .close-button{
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 10px;
+                font-size: 2rem;
+                color: white;
+                cursor: pointer;
+            }
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+section.main-banner{
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 3rem;
+        color: $main-color;
+    }
+    h4{
+        margin-top: 30px;
+        font-size: 3rem;
+        color: $grey;
+    }
+    h5{
+        font-size: .8rem;
+        margin-top: 10px;
+        a{
+            color: $main-color;
+        }
+    }
+}
+
+section.player-functions{
+    padding: 30px 0;
+    .container{
+        nav{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            button{
+                min-width: 230px;
+                padding: 10px 5px;
+                border: 0.1rem solid $main-color;
+                background-color: white;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    color: $grey;
+                    background-color: $main-color;
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .flex-functions{
+            display: flex;
+            margin-top: 30px;
+            @media screen and (max-width: 700px){
+                flex-direction: column;
+                align-items: center;
+            }
+            .functions-descriptions{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .container{
+                    max-width: 500px;
+                    h2{
+                        margin-bottom: 20px;
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        color: $grey;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                max-width: 350px;
+                max-height: 400px;
+                object-fit: contain;
+                @media screen and (max-width: 700px){
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+section.utilities{
+    width: 100%;
+    padding: 20px 0;
+    background-color: $grey;
+    center h2{
+        color: white;
+        font-size: 2rem;
+    }
+    .container{
+        nav{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            button{
+                min-width: 200px;
+                padding: 15px 0;
+                font-size: 1rem;
+                background-color: transparent;
+                border: .1rem solid $main-color;
+                color: $main-color;
+                font-weight: 300;
+                transition: .3s;
+                cursor: pointer;
+                &:hover{
+                    background-color: $main-color;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+        ul.maps-list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin-top: 30px;
+            li{
+                width: 200px;
+                height: 300px;
+                background-color: $grey;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .3s;
+                }
+                .overlay{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .2s;
+                    h2{
+                        opacity: 0;
+                        color: white;
+                    }
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.7);
+                    }
+                    &:hover h2{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.maps{
+    padding: 30px 0;
+    .container{
+        max-width: 1200px;
+        .flex-map-section{
+            display: flex;
+            gap: 30px;
+            @media screen and (max-width: 770px){
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .details{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                justify-content: center;
+                @media screen and (max-width: 770px){
+                    width: 90%;
+                }
+                h2{
+                font-size: 2rem;
+                color: $black;
+                max-width: 600px;
+                    span{
+                        color: $main-color;
+                    }
+                }
+                p{
+                    color: $grey;
+                }
+            }
+            aside.map-list{
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    @media screen and (max-width: 770px){
+                        justify-content: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                        li{
+                            font-size: 1.2rem;
+                            padding: 10px;
+                            background-color: transparent;
+                            border: 1px solid $main-color;
+                            min-width: 200px;
+                            transition: .2s;
+                            &:hover{
+                                background-color: $main-color;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./mapDetail";
+@import "./utilitiesDetail";
+@import "./comands";
