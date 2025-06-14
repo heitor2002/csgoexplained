@@ -17,8 +17,8 @@ const linkMapImages = {
   vertigo: "https://external-preview.redd.it/8QH3OEwdoAKQ2BAt9IhG4inFU0XuVSeYRkBGLsDvjpo.jpg?auto=webp&s=dfc88b6405c6b3e130fb4c9adac244049be987e0",
 }
 
-const slugMaps = "../mapas/"
-const slugUtilities = "../utilitarios/"
+const slugMaps = "../csgoexplained/mapas/"
+const slugUtilities = "../csgoexplained/utilitarios/"
 
 const mapsList = [
   {
