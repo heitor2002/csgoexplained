@@ -62,12 +62,22 @@ header{
         z-index: 2;
         @media screen and (max-width: 570px){
             display: block;
+            
         }
         img{
             width: 100%;
             max-width: 50px;
             cursor: pointer;
         }
+        // ul.active{
+        //         width: 50vw;
+        //         height: 100vh;
+        //         max-width: 250px;
+        //         position: fixed;
+        //         top: 0;
+        //         right: 0;
+        //         background-color: $grey;
+        //     }
         ul{
             width: 50vw;
             max-width: 250px;
@@ -84,6 +94,7 @@ header{
             gap: 30px;
             transition: .3s;
             transform: translateX(100%);
+            
             .close-button{
                 position: absolute;
                 left: 0;
@@ -99,6 +110,9 @@ header{
                     text-decoration: none;
                 }
             }
+        }
+        .active{
+            transform: translateX(0);
         }
     }
 }

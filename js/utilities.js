@@ -10,7 +10,7 @@ const linkMapImages = {
   mirage: "https://noticias.maisesports.com.br/wp-content/uploads/2022/03/CSGO_Mirage_latest_version.jpg",
   inferno: "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2016/12/07/1331833433802_2/you-want-the-fountain...smaller-and-more-coffins.jpg",
   dust: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/7/15/mdlhtjaz85gjhahyakce/csgo-dust-2-map",
-  cache: "https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2020/02/erbmqjjwaaakmbb.jpg",
+  cache: "https://img-cdn.hltv.org/gallerypicture/aJnFxWKkL0DwOVkufGuYKo.jpg?ixlib=java-2.1.0&w=1200&s=e0517dcfbb61f25b056c8d35d6b7fc5c",
   nuke: "https://gumlet.assettype.com/afkgaming%2F2021-07%2F9c698074-819a-46a3-a28b-964e63861453%2FCover_Image___This_Simple_Feature_On_Nuke_Has_Caught_The_CSGO_Community_By_Surprise.jpg?compress=true&dpr=1&w=1200",
   overpass: "https://criticalhits.com.br/wp-content/uploads/2019/07/Overpass.jpg",
   train: "https://cdn.akamai.steamstatic.com/apps/csgo/images/reintroducing_train/BSiteOverview-new.jpg",

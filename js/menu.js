@@ -1,11 +1,14 @@
-const menuButton = document.getElementById("menu-button")
-const menuMobile = document.querySelector(".menu-mobile ul")
-const closeButtonMenuMobile = document.querySelector(".close-button")
+const menuButton = document.getElementById("menu-button");
+const menuMobile = document.getElementById("ul-menu-mobile")
 
-menuButton.addEventListener("click", () => {
-  menuMobile.style.transform = "translateX(0%)"
-})
+const menuMobileActivation = () => {
+  let checker = menuMobile.classList.contains("active")
 
-closeButtonMenuMobile.addEventListener("click", () => {
-  menuMobile.style.transform = "translateX(100%)"
-})
+  if(!checker){
+    menuMobile.classList.add("active")
+  }else{
+    menuMobile.classList.remove("active")
+  }
+
+  console.log(checker)
+}

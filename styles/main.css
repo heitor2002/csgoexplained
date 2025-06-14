@@ -96,6 +96,9 @@ header .menu-mobile ul li a {
   color: white;
   text-decoration: none;
 }
+header .menu-mobile .active {
+  transform: translateX(0);
+}
 
 section.main-banner {
   text-align: center;
